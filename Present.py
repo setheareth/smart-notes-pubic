@@ -9,7 +9,7 @@ parent_note = list()
 
 
 notes_win = QWidget()
-notes_win.setWindowTitle('Smart Notes')
+notes_win.setWindowTitle('Eco_Notes')
 notes_win.resize(900, 600)
 
 
@@ -22,19 +22,9 @@ list_notes_label = QLabel('List of notes')
 
 button_note_create = QPushButton('Create note') 
 button_note_save = QPushButton('Save note')
-button_note_del = QPushButton('Delete note')
 
 
-# list of tags
-list_tags = QListWidget()
-list_tags_label = QLabel('List of tags')
 
-button_add = QPushButton('Add to note')
-button_del = QPushButton('Untag from note')
-button_search = QPushButton('Search notes by tag')
-
-field_tag = QLineEdit('')
-field_tag.setPlaceholderText('Enter tag...')
 
 ######################
 
@@ -52,28 +42,16 @@ row_1 = QHBoxLayout()
 row_2 = QHBoxLayout()
 
 row_1.addWidget(button_note_create)
-row_1.addWidget(button_note_del)
 
-row_2.addWidget(button_note_save)
+row_1.addWidget(button_note_save)
 
 col_2.addLayout(row_1)
 col_2.addLayout(row_2)
 
 ################
 
-col_2.addWidget(list_tags_label)
-col_2.addWidget(list_tags)
-col_2.addWidget(field_tag)
 
-row_3 = QHBoxLayout()
-row_3.addWidget(button_add)
-row_3.addWidget(button_del)
 
-row_4 = QHBoxLayout()
-row_4.addWidget(button_search)
-
-col_2.addLayout(row_3)
-col_2.addLayout(row_4)
 
 
 layout_notes = QHBoxLayout()
