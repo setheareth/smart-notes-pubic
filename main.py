@@ -226,9 +226,12 @@ while True:
                 child_note.append(line)
         
         ''' note inside note '''
-        tags = child_note[2].split(' ')
-        child_note[2] = tags
-
+        if len(child_note) > 2:
+            tags = child_note[2].split(' ')
+            child_note[2] = tags
+        else:
+            # Handle the case where child_note does not have enough elements
+            print("child_note does not have enough elements")
         parent_note.append(child_note)
         child_note = list()
         number_name += 1
