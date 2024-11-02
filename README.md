@@ -1,1 +1,5 @@
-    git clone https://github.com/setheareth/smart-notes-pubic/blob/main/Present.py
+# Quick Start    
+
+    git clone https://github.com/setheareth/smart-notes-pubic.git
+
+    python3 Present.py
